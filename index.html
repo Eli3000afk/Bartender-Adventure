@@ -1,0 +1,157 @@
+import random
+
+name = input("Hello, what is your name? ")
+print("Hello there", name, "What do you want? ")
+order = input()
+
+if order.lower() == "beer":
+    age = int(input("How old are you? "))
+
+    if age == 21:
+        print("Here you go. Enjoy.")
+
+    elif age == 20:
+        print("Sorry, you're not old enough for alcohol. How about some juice instead?")
+        juice_choice = input("Do you want juice? (yes/no) ")
+        if juice_choice.lower() == "yes":
+            print("Here's your juice. Enjoy!")
+        else:
+            print("No juice then. You have to leave the bar.")
+
+    elif age < 18:
+        print("Wait a minute, you're way too young to be in a bar! I'm calling the police!")
+
+elif order.lower() == "water":
+    print("Water? Really? Well... here's your water. Stay hydrated.")
+    print("You drink the water, but the bartender gives you a strange look. The end.")
+
+elif order.lower() == "oil":
+    print("KNOCK KNOCK IDIOTS, IT'S THE UNITED STATES OF AMERICA!")
+    print("WE'VE HEARD YOU GUYS GOT OIL THAT ISN'T UNDER OUR POSSESSION!")
+    print("SO SHUT OFF THE FOUNTAIN AND RETURN THE OIL TO US BEFORE WE HAVE TO RESORT TO BRINGING DEMOCRACY TO THESE LANDS!")
+
+elif order.lower() == "sandvich":
+    print("You reach for the Sandvich...")
+    print("Suddenly, a large figure bursts into the room!")
+    print("Heavy: 'WHO TOUCHED MY SANDVICH?!'")
+    print("Before you can react, the Heavy pulls out his minigun and guns you down.")
+    print("Heavy: 'No one touches my Sandvich!' The end.")
+
+elif order.lower() == "cup of joe":
+    print("You receive a nice, warm cup of joe.")
+    print("You take a sip, but something tastes... off.")
+    print("After finishing the cup, you ask the bartender where it came from.")
+    print("Bartender: 'Oh, that's from SCP-294, the coffee machine. It can dispense anything... literally anything.'")
+    print("Suddenly, your stomach churns violently.")
+    print("You realize that the 'joe' you just drank might not be what you think it was...")
+    print("You're overwhelmed with disgust and feel violently ill. The end.")
+
+elif order.lower() == "elixir of immortality":
+    print("You ask the bartender for the Elixir of Immortality.")
+    print("The bartender raises an eyebrow and replies,")
+    print('"Sir, this is a bar, not an ancient temple wannabe Indiana Jones."')
+    print("He shakes his head and serves you a drink instead. The end.")
+
+elif order.lower() == "coffee":
+    print("You ask the bartender for a cup of coffee.")
+    print("The bartender sighs and shouts to a staff member in the back,")
+    print('"Make that cup of coffee quick! We got a case of the Mondays here!"')
+    print("You wait a moment, and the staff member hurriedly brings out a steaming cup of coffee.")
+    print("The bartender hands it to you with a wink. The end.")
+
+elif order.lower() == "blood":
+    print("You ask the bartender for a glass of blood.")
+    print("The bartender looks at you with a raised eyebrow and sarcastically replies,")
+    print('"Okay Dracula, how about some red wine instead?"')
+    print("He pours you a glass of rich red wine and slides it across the bar.")
+    print("You take a sip and realize it's not quite what you were expecting. The end.")
+
+elif order.lower() == "bonk":
+    print("You order a can of Bonk! Atomic Punch.")
+    print("The bartender hands you the brightly colored can with a smile.")
+    print("You crack it open and chug it down. Instantly, you feel a surge of energy course through your veins.")
+    print("As you leave the bar at lightning speed, you hear a familiar Boston accent shouting:")
+    print('"HEY, WHO DRANK THE LAST BONK CAN?! THAT WAS MINE!"')
+    print("You turn around and see Scout running after you with his bat. The end.")
+
+elif order.lower() == "glyphid slammer":
+    print("You order a Glyphid Slammer, the strongest brew on Hoxxes IV.")
+    print("The bartender whistles, and out of nowhere, Bosco appears with a glowing tray.")
+    print("The friendly drone dispenses a frothing Glyphid Slammer into a sturdy mug.")
+    print("You take the drink and chug it down in one go. The intense flavor hits you like a Meteor Shower.")
+    print("As you slam the mug down on the counter, you feel invincible.")
+    print('"I could take on the entire Glyphid population of Hoxxes!" you shout with renewed energy.')
+    print("The bartender gives you a thumbs up, and Bosco beeps approvingly. The end.")
+
+elif order.lower() == "blackout stout":
+    print("The bartender looks at you with a serious expression.")
+    print('"If you drink this and don\'t pass out, free drinks for life. Are you sure?"')
+    confirmation = input("Drink the Blackout Stout? (yes/no) ").lower()
+    if confirmation == "yes":
+        if random.randint(1, 100) <= 5:
+            print("You chug the Blackout Stout... and remain standing!")
+            print("The entire bar erupts into cheers, and the bartender salutes you.")
+            print('"Free drinks for life, as promised!" The end.')
+        else:
+            print("You chug the Blackout Stout... and immediately hit the floor, unconscious.")
+            print("You wake up hours later, with a pounding headache and no memory of the event. The end.")
+    else:
+        print("You decide against it. The bartender nods in approval. The end.")
+
+elif order.lower() == "jetfuel":
+    print("The bartender raises an eyebrow and hands you a tall glass of jetfuel.")
+    print("You down the drink, feeling the burn in your throat and stomach.")
+    print('As you finish, you mutter, "Hehehe...Jetfuel inv people nd car... jetfuel go vroom vroom hehehehe."')
+    print("The bartender shakes his head. The end.")
+
+elif order.lower() == "justice":
+    print("The bartender raises an eyebrow. 'Are you sure you want justice?'")
+    confirmation = input("Confirm your order for justice? (yes/no) ").lower()
+    if confirmation == "yes":
+        print("The bartender nods solemnly and whispers into a small microphone, 'One order of justice, table one.'")
+        print("Suddenly, the room goes dark, and a shadow descends from the ceiling.")
+        print("Before you can react, you're in a chokehold, struggling for breath.")
+        print("As your vision blurs, a deep, gravelly voice speaks in your ear...")
+        print('"Justice... with a side order of spaghetti!"')
+        print("The last thing you see is a shadowy figure disappearing into the darkness. The end.")
+    else:
+        print("The bartender shrugs. 'No justice for you today.'")
+
+elif order.lower() == "matrix choice":
+    print("The bartender slides two pills across the counter.")
+    print('"One of these pills will change your reality forever. The other will keep you in the life you know."')
+    pill_choice = input("Do you want the red pill or the blue pill? (red/blue) ").lower()
+
+    if pill_choice == "red":
+        print("You take the red pill, and suddenly everything around you glitches.")
+        print("You awaken in a dark, dystopian world. The Matrix has been revealed, and you're part of the resistance now.")
+        print("Your eyes have been opened to the truth of the simulated reality. Welcome to the real world... it’s a harsh one.")
+        print("A figure approaches you. 'We need you to fight for humanity’s freedom.' The end.")
+    elif pill_choice == "blue":
+        print("You take the blue pill, and everything goes back to normal.")
+        print("You go about your day, unaware of the reality that you’ve just avoided.")
+        print("The Matrix continues to control your life, and you live in blissful ignorance.")
+        print("The bartender gives you a nod. 'Smart choice.' The end.")
+    else:
+        print("You hesitate, unsure of what to do. The bartender shakes his head. 'Too bad, no pills for you today.'")
+
+elif order.lower() == "scrumpy":
+    print("You reach for the last bottle of scrumpy on the shelf.")
+    print("As you take a swig, you hear a loud, angry voice shout from behind you.")
+    print("Demoman: 'WEEEEEY, WHO TOOK THE LAST SCRUMPY?!'")
+    print("Before you can react, Demoman charges at you with a bottle in one hand and a grenade in the other.")
+    print("He screams as he swings the bottle at your head, knocking you to the ground.")
+    print("Demoman: 'YOU'VE MADE A FOOL OF ME!'")
+    print("In the chaos, the bartender calls for a ceasefire, but Demoman’s rage is unyielding.")
+    print("Unfortunately for you, you’re caught in the blast of his 'Scottish Ham' explosion. The end.")
+
+elif order.lower() == "french wine":
+    print("You notice a bottle of French wine left on the bar, and decide to take the last sip.")
+    print("The moment you drink the wine, you feel a sharp pain in your back.")
+    print("Suddenly, you hear a voice from behind you.")
+    print("Spy: 'I never really was on your side.'")
+    print("You collapse to the floor as the Spy backstabs you. The end.")
+
+else:
+    print("We don't have that in stock.")
+
